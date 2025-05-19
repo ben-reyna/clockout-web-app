@@ -62,3 +62,7 @@ ClockoutFlaskApp/
 [bananalogic](https://github.com/ben-reyna)
 
 Made with Onamac Industies, Inc. hourly employees in mind, but built for everyone.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
