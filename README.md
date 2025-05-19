@@ -4,7 +4,7 @@ A sleek, accessible, dark-mode Flask web app for hourly employees to quickly cal
 
 ## What It Does
 
-Enter your current weekly hours and your latest clock-in time. The app tells you **exactly when to clock out** to stay under your max hours (default is 40.0). Great for managing overtime.
+Enter your current weekly hours and your latest clock-in time. The app tells you exactly when to clock out to stay under your max hours (default is 40.0). Great for managing overtime.
 
 ## Features
 
@@ -12,58 +12,53 @@ Enter your current weekly hours and your latest clock-in time. The app tells you
 - Keyboard-accessible and screen-reader friendly
 - Fully responsive (works on desktops, tablets, and phones)
 - Secure by default (CSP headers, no JS dependencies)
-- ⌨Accessible skip link for screen readers
+- Accessible skip link for screen readers
 - Includes favicon and inline logo
 - Attribution footer with GitHub profile link
 
 ## Getting Started
 
-Clone the repo and run it locally:
+### On macOS/Linux (or Git Bash on Windows):
 
-git clone https://github.com/bananalogic/clockout-web-app.git
+```bash
+git clone https://github.com/ben-reyna/clockout-web-app.git
 cd clockout-web-app
 pip install flask
 flask run
+```
 
-Then open http://127.0.0.1:5000 in your browser.
-Tech Stack
+Then open [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser.
 
-    Python 3.x
+## Tech Stack
 
-    Flask
+- Python 3.x
+- Flask
+- HTML5 + CSS3 (no JavaScript!)
+- Fully self-contained app with local-only assets
 
-    HTML5 + CSS3 (no JavaScript!)
-
-    Fully self-contained app with local-only assets
-
-Security & Privacy
+## Security & Privacy
 
 This app is secure by design:
 
-    CSP headers block third-party scripts/styles
+- CSP headers block third-party scripts/styles
+- No external JS libraries = no dependency bloat or injection vectors
+- No personal data collected or stored
+- Local-hosted fonts and favicon
+- Safe to host internally or externally
 
-    No external JS libraries = no dependency bloat or injection vectors
+## Folder Structure
 
-    No personal data collected or stored
-
-    Local-hosted fonts and favicon
-
-    Safe to host internally or externally
-
-Folder Structure
-
+```
 ClockoutFlaskApp/
 │
-├── static/               # All static assets (favicons, logos)
-├── Templates/            # HTML templates (Jinja2)
-├── ClockoutFlaskApp.py   # Main Flask app
-└── .gitignore            # Properly ignores cache, .db, venv, etc.
+├── static/              # All static assets (favicons, logos)
+├── Templates/           # HTML templates (Jinja2)
+├── ClockoutFlaskApp.py  # Main Flask app
+└── .gitignore           # Properly ignores cache, .db, venv, etc.
+```
 
-👨‍💻 Developed By
+## Developed By
 
-bananalogic
+[bananalogic](https://github.com/ben-reyna)
 
-    Made with Onamac Industies, Inc. hourly employees in mind, but built for everyone.
-
-
----
+Made with Onamac Industies, Inc. hourly employees in mind, but built for everyone.
